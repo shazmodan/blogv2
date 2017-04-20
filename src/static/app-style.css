@@ -1,0 +1,122 @@
+p {
+  font-size: 16px; }
+
+@font-face {
+  font-family: 'proximanova-regular';
+  src: url("/static/proximanova-regular-webfont.woff2") format("woff2"); }
+
+.font-proxima {
+  font-family: "proximanova-regular", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.top {
+  background-color: #E5EAFA;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  text-align: left;
+  padding: 40px 0px 60px 0px;
+  box-shadow: none; }
+  .top .lead {
+    margin-bottom: 0; }
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none; }
+
+.hero-img {
+  width: 160px;
+  height: 160px; }
+
+.strong {
+  font-weight: 700; }
+
+.link {
+  text-decoration: none;
+  color: black; }
+  .link:hover {
+    color: black;
+    text-decoration: none; }
+
+.article-list .article-post {
+  background-color: white;
+  margin-top: -20px;
+  box-shadow: 0px 0px 13px -3px #5e575e;
+  margin-bottom: 60px;
+  border: 1px solid #d4d4d6; }
+  .article-list .article-post .lead {
+    margin-bottom: 10px; }
+
+.article-list .article-icon {
+  width: 140px;
+  height: 140px; }
+
+.footer {
+  background-color: #D8E1E9;
+  color: black;
+  padding: 12px 0 24px 0; }
+.timeline-item {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+@-webkit-keyframes placeHolderShimmer {
+  0% {
+    background-position: -900px 0; }
+  100% {
+    background-position: 900px 0; } }
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -900px 0; }
+  100% {
+    background-position: 900px 0; } }
+
+.animated-background {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: placeHolderShimmer;
+          animation-name: placeHolderShimmer;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  background: #f6f7f8;
+  background: -webkit-linear-gradient(left, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+  background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+  background-size: 900px 104px;
+  height: 230px;
+  position: relative; }
+
+.background-masker {
+  background: #fff;
+  position: absolute; }
+
+/* Every thing below this is just positioning */
+.background-masker {
+  left: 0;
+  right: 0;
+  height: 10px; }
+  .background-masker.content-top {
+    top: 50px; }
+  .background-masker.content-top-end {
+    width: auto;
+    left: 540px;
+    right: 0;
+    top: 0px;
+    height: 50px; }
+  .background-masker.content-second-line {
+    top: 80px; }
+  .background-masker.content-third-line {
+    top: 110px; }
+  .background-masker.content-fourth-line {
+    top: 140px; }
+  .background-masker.content-fifth-line {
+    top: 170px; }
+  .background-masker.content-sixth-line {
+    top: 200px; }
+
+/*# sourceMappingURL=app-style.map*/
