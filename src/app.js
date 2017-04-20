@@ -55,7 +55,7 @@ app.get(articlesUrl, function (req, res) {
   });
 });
 
-// Default for all unrecognised routes. (Let Angular2 router handle it)
+// Default for all unrecognised routes. (Let client side router handle it)
 app.use(function (req, res) {
   res.sendFile(__dirname + '/index.html');
 });

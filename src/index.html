@@ -3,8 +3,8 @@
 
 <head>
     <base href="/">
-    <link rel="stylesheet" href="/static/vendor-style.css" />
-    <link rel="stylesheet" href="/static/app-style.css" />
+    <link rel="stylesheet" href="/static/css/vendor-style.css" />
+    <link rel="stylesheet" href="/static/css/app-style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="utf-8">
@@ -45,8 +45,7 @@
                 </a>
             </header>
         </div>
-        <app>
-        </app>
+        <article-list></article-list>
     </div>
     <div class="container-fluid">
         <div class="row footer">
@@ -59,16 +58,16 @@
                         <a href="http://www.avegagroup.se/" target="_blank">Avega Group</a>.
                     </p>
                     <p>
-                        If you want to get in touch, just ping me on <a href="http://twitter.com/shazmodan" target="_blank">Twitter</a>                        or <a href="mailto:williambergqvist123@gmail.com">drop me an email</a>.
+                        If you want to get in touch, just ping me on <a href="http://twitter.com/shazmodan" target="_blank">Twitter</a>.
                     </p>
                 </article>
             </footer>
         </div>
     </div>
-    <script src="/static/polyfills.bundle.js"></script>
-    <script src="/static/vendor.bundle.js"></script>
-    <script async src="/static/app.bundle.js"></script>
-    <script async src="/static/highlight.pack.js"></script>
+    <script src="/static/js/riot_compiler.min.js"></script>
+    <script type="riot/tag" src="/static/html/article-list.tag"></script>
+    <script>riot.mount('*')</script>
+    <!--<script async src="/static/js/highlight.pack.js"></script>-->
 </body>
 
 </html>

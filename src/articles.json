@@ -1,5 +1,5 @@
 {
-	"Results": [{
+	"articles": [{
 		"iconSrc": "/static/img/node.svg",
 		"iconAlt": "node",
 		"name": "creating-a-blog-with-nodejs",
