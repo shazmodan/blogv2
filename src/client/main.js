@@ -1,4 +1,11 @@
-import * from "./highlight.pack";
-import { riot } from "./riot+compiler";
+// import hljs from "highlight.js";
+import riot from "riot";
+import compiler from "riot-compiler";
 
-riot.mount('*');
+// riot.mount('*');
+
+compiler.compile(function() {
+  // here tags are compiled and riot.mount works synchronously
+  var tags = riot.mount('*')
+  console.log("tags", tags);
+})
