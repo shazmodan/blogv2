@@ -3,7 +3,7 @@ p {
 
 @font-face {
   font-family: 'proximanova-regular';
-  src: url("/static/proximanova-regular-webfont.woff2") format("woff2"); }
+  src: url("/static/assets/proximanova-regular-webfont.woff2") format("woff2"); }
 
 .font-proxima {
   font-family: "proximanova-regular", "Helvetica Neue", Helvetica, Arial, sans-serif; }

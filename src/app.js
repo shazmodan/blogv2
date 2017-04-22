@@ -10,7 +10,7 @@ const cacheDurationMs = 3600 * 1000; //one hour = 3600s, 1 sec = 1000ms
 app.use(compression())
 
 // Store all static files here.
-app.use('/static', express.static('./static/', {
+app.use('/static', express.static('./src/static/', {
   maxAge: 86400000
 }));
 
@@ -56,9 +56,9 @@ app.get(articlesUrl, function (req, res) {
 });
 
 // Default for all unrecognised routes. (Let client side router handle it)
-app.use(function (req, res) {
-  res.sendFile(__dirname + '/index.html');
-});
+// app.use(function (req, res) {
+//   res.sendFile(__dirname + '/index.html');
+// });
 
 app.listen(3000, function () {
   console.log('Blog app listening on port 3000!');
