@@ -14,12 +14,12 @@ app.use('/static', express.static('./src/static/', {
   maxAge: 86400000
 }));
 
-app.get('/', function (req, res) {
+app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
 });
 
 const articleUrl = '/api/article/';
-app.get(articleUrl + ':name', function (req, res) {
+app.get(articleUrl + ':name', (req, res) => {
   let url = articleUrl + req.params.name;
   let cachedArticle = cache.get(url);
   if (cachedArticle !== null) {
@@ -38,7 +38,7 @@ app.get(articleUrl + ':name', function (req, res) {
 });
 
 const articlesUrl = '/api/articles/';
-app.get(articlesUrl, function (req, res) {
+app.get(articlesUrl, (req, res) => {
   let cachedArticles = cache.get(articlesUrl);
   if (cachedArticles !== null) {
     res.send(cachedArticles);
@@ -57,8 +57,7 @@ app.get(articlesUrl, function (req, res) {
 
 // Match everything that does not contain a dot (.)
 // And let client side router handle it.
-app.get(/^[^.]+$/, function(req, res) {
-  console.log("regex match all route without a dot")
+app.get(/^[^.]+$/, (req, res) => {
   res.sendFile(__dirname + '/index.html');
 });
 

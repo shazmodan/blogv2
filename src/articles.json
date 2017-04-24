@@ -1,5 +1,6 @@
 {
 	"articles": [{
+		"id": "507f191e810c19729de860ea", 
 		"iconSrc": "/static/img/node.svg",
 		"iconAlt": "node",
 		"name": "creating-a-blog-with-nodejs",
@@ -10,6 +11,7 @@
 		"publishDate": "2016-01-01T12:35:00.0000000Z",
 		"tags": ["node", "javascript"]
 	}, {
+		"id": "607f191e810c19729de860ea",
 		"iconSrc": "/static/img/ravendb.png",
 		"iconAlt": "ravendb",
 		"name": "doing-magic-with-ravendb",
