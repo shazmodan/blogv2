@@ -1,6 +1,5 @@
 import riot from 'riot';
 import route from 'riot-route';
-import './app.tag';
 import './article-list.tag';
 import './blog-article.tag';
 
@@ -13,10 +12,10 @@ route('/', () => {
     riot.mount('#app', 'article-list');
 });
 
-route('/*', () => {
-    riot.mount('#app', 'blog-article');
+route('/*', (slug) => {
+    riot.mount('#app', 'blog-article', { articleName: slug });
 });
 
-route('/*/', () => {
-    riot.mount('#app', 'blog-article');
+route('/*/', (slug) => {
+    riot.mount('#app', 'blog-article', { articleName: slug });
 });

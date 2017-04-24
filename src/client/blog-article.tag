@@ -13,10 +13,9 @@
     </article>
     
     <script>
+        this.articleName = opts.articleName;
 
-         this.on('route', blogArticleName => {
-             console.log("blog-article-tag -> on route: ", blogArticleName);
-         });
+
         // TODO: isLoading logic
         
         //const getBlogArticleByName = (name) => {
