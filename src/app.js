@@ -7,7 +7,7 @@ const cache = require('memory-cache');
 const cacheDurationMs = 3600 * 1000; //one hour = 3600s, 1 sec = 1000ms
 
 // Enable gzip compression.
-app.use(compression())
+app.use(compression()) 
 
 // Store all static files here.
 app.use('/static', express.static('./src/static/', {
@@ -55,10 +55,12 @@ app.get(articlesUrl, function (req, res) {
   });
 });
 
-// Default for all unrecognised routes. (Let client side router handle it)
-// app.use(function (req, res) {
-//   res.sendFile(__dirname + '/index.html');
-// });
+// Match everything that does not contain a dot (.)
+// And let client side router handle it.
+app.get(/^[^.]+$/, function(req, res) {
+  console.log("regex match all route without a dot")
+  res.sendFile(__dirname + '/index.html');
+});
 
 app.listen(3000, function () {
   console.log('Blog app listening on port 3000!');
