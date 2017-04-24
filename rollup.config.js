@@ -4,8 +4,8 @@ import commonjs from 'rollup-plugin-commonjs';
 import buble from 'rollup-plugin-buble';
 import postcss from 'postcss';
 import postcssCssnext from 'postcss-cssnext';
-import uglify from 'rollup-plugin-uglify';
-import { minify } from 'uglify-js-harmony'
+// import uglify from 'rollup-plugin-uglify';
+// import { minify } from 'uglify-js-harmony'
 
 export default {
   entry: 'src/client/main.js',
@@ -20,8 +20,8 @@ export default {
     }),
     resolve({jsnext: true }),
     commonjs(),
-    buble(),
-    uglify({}, minify)
+    buble()//,
+    // uglify({}, minify)
   ]
 }
 
