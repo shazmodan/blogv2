@@ -27,7 +27,8 @@ app.get(articleUrl + ':name', (req, res) => {
     return;
   }
 
-  const promise = articleProvider.loadSingleArticleAsync(req.params.name);
+  const promise = articleProvider.loadSingleArticleFromFileAsync(req.params.name);
+  //const promise = articleProvider.loadSingleArticleAsync(req.params.name);
   promise.then((result) => {
     if (result === null) {
       res.sendStatus(404);
@@ -45,7 +46,8 @@ app.get(articlesUrl, (req, res) => {
     return;
   }
 
-  const promise = articleProvider.loadArticlesAsync(5);
+  const promise = articleProvider.loadArticlesFromFileAsync();
+  // const promise = articleProvider.loadArticlesAsync(5);
   promise.then((result) => {
     if (result === null) {
       res.sendStatus(404);
@@ -55,7 +57,7 @@ app.get(articlesUrl, (req, res) => {
   });
 });
 
-// Match everything that does not contain a dot (.)
+// Match everything that does NOT contain a dot (.) (such as .css and .js etc.)
 // And let client side router handle it.
 app.get(/^[^.]+$/, (req, res) => {
   res.sendFile(__dirname + '/index.html');

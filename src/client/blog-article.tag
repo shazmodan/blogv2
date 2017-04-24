@@ -37,15 +37,6 @@
 
         this.article = fetchedArticle;
 
-       // this.on('route', blogArticleName => {
-       //     console.log("blog-article.tag -> route: ", blogArticleName);
-       //     getBlogArticleByName(blogArticleName).then(blogArticle => {
-       //         this.update({
-       //             article: blogArticle
-       //         })
-       //     })
-       // })
-
     </script>
 
 </blog-article>
