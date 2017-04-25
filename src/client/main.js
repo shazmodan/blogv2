@@ -5,8 +5,9 @@ import { loadArticles, loadArticle } from './api-agent.js';
 
 import './article-list.tag';
 import './blog-article.tag';
+import './raw.tag';
 
-// var monkey = {
+// const monkey = {
 //     sayHello: function() { console.log("hello monkey") }
 // };
 

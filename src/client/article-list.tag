@@ -8,12 +8,12 @@
 					<div class="col-xs-9">
 						<h1 itemprop="name headline">{ heading }</h1>
 						<p class="lead">{ teaser }</p>
-						<p class="small">Published <span itemprop="datePublished">{ publishDate }</span></p>
+						<p class="small">Published <span itemprop="datePublished">{ publishDate.substring(0, 10) }</span></p>
 					</div>
 				</a>
 			</div>
 			<div class="row">
-				<div itemprop="articleBody" class="col-xs-12">{ ingressHtml }</div>
+				<div itemprop="articleBody" class="col-xs-12"><raw content="{ ingressHtml }" /></div>
 			</div>
 		</article>
 	</div>
