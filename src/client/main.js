@@ -20,13 +20,13 @@ route.start(true);
 route.base('/');
 
 route('/', () => {
-    riot.mount('#app', 'article-list', { loadArticles: loadArticles });
+    riot.mount('#app', 'article-list', { articles: loadArticles() });
 });
 
 route('/*', (slug) => {
-    riot.mount('#app', 'blog-article', { articleName: slug, loadArticle: loadArticle });
+    riot.mount('#app', 'blog-article', { article: loadArticle(slug) });
 });
 
 route('/*/', (slug) => {
-    riot.mount('#app', 'blog-article', { articleName: slug, loadArticle: loadArticle });
+    riot.mount('#app', 'blog-article', { article: loadArticle(slug) });
 });

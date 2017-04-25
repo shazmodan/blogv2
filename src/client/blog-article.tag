@@ -15,12 +15,12 @@
     <script>
         const hljs = this.mixin('hljs');
 
-        opts.loadArticle(opts.articleName)
-			.then((article) => {
+        opts.article
+            .then((article) => {
                 console.log("article", article);
 				this.article = article;
 				this.update();
-		});
+        });
 
         this.on('updated', () => {
             var blocks = document.querySelectorAll('pre code');

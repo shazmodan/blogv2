@@ -19,13 +19,12 @@
 	</div>
 
 	<script>
-		opts.loadArticles()
+		opts.articles
 			.then((articles) => {
 				this.articles = articles;
 				this.update();
 		});
 
-		//this.mixin('monkey').sayHello();
 	</script>
 
 </article-list>
