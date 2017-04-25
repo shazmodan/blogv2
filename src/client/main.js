@@ -14,7 +14,7 @@ import './raw.tag';
 
 // riot.mixin('monkey', monkey);
 
-riot.mixin('highlight', hljs);
+riot.mixin('hljs', hljs);
 
 route.start(true);
 route.base('/');

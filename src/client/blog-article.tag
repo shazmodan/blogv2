@@ -8,11 +8,13 @@
             <p class="small" itemprop="datePublished">Published { article.publishDate ? article.publishDate.substring(0, 10) : '' }</p>
         </div>
         <div class="row">
-            <div itemprop="articleBody"><raw content="{ article.bodyHtml }" /></div>
+            <div itemprop="articleBody"><raw id="highlightable" content="{ article.bodyHtml }" /></div>
         </div>
     </article>
     
     <script>
+        const hljs = this.mixin('hljs');
+
         opts.loadArticle(opts.articleName)
 			.then((article) => {
                 console.log("article", article);
@@ -21,11 +23,11 @@
 		});
 
         this.on('updated', () => {
-            if(this.mixin('highlight')){
-                this.mixin('highlight').initHighlighting();
-            }
+            var blocks = document.querySelectorAll('pre code');
+            blocks.forEach((block) => {
+                hljs.highlightBlock(block);
+            });
         });
-        
 
     </script>
 
