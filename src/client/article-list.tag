@@ -24,6 +24,8 @@
 				this.articles = articles;
 				this.update();
 		});
+
+		//this.mixin('monkey').sayHello();
 	</script>
 
 </article-list>

@@ -1,9 +1,5 @@
 import 'whatwg-fetch'; 
 
-// export function loadArticles() {
-
-// }
-
 export const loadArticles = () => {
     console.log("fetch loadArticles!", fetch);
     const url = '/api/articles';

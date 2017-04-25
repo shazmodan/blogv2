@@ -6,6 +6,12 @@ import { loadArticles, loadArticle } from './api-agent.js';
 import './article-list.tag';
 import './blog-article.tag';
 
+// var monkey = {
+//     sayHello: function() { console.log("hello monkey") }
+// };
+
+// riot.mixin('monkey', monkey);
+
 route.start(true);
 route.base('/');
 
