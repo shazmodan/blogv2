@@ -20,6 +20,13 @@
 				this.update();
 		});
 
+        this.on('updated', () => {
+            if(this.mixin('highlight')){
+                this.mixin('highlight').initHighlighting();
+            }
+        });
+        
+
     </script>
 
 </blog-article>
