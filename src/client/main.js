@@ -1,13 +1,22 @@
 import riot from 'riot';
+import route from 'riot-route';
 
-import './router.js';
-import './articleFetcher.js'
+import { loadArticles, loadArticle } from './api-agent.js';
 
 import './article-list.tag';
 import './blog-article.tag';
 
+route.start(true);
+route.base('/');
 
+route('/', () => {
+    riot.mount('#app', 'article-list', { loadArticles: loadArticles });
+});
 
+route('/*', (slug) => {
+    riot.mount('#app', 'blog-article', { articleName: slug, loadArticle: loadArticle });
+});
 
-riot.mount('*');
-
+route('/*/', (slug) => {
+    riot.mount('#app', 'blog-article', { articleName: slug, loadArticle: loadArticle });
+});
