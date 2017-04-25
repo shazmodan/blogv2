@@ -8,12 +8,6 @@ import './article-list.tag';
 import './blog-article.tag';
 import './raw.tag';
 
-// const monkey = {
-//     sayHello: function() { console.log("hello monkey") }
-// };
-
-// riot.mixin('monkey', monkey);
-
 riot.mixin('hljs', hljs);
 
 route.start(true);

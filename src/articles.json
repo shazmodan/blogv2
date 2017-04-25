@@ -1,5 +1,27 @@
 {
 	"articles": [{
+		"id": "707f191e810c19729de860ea",
+		"iconSrc": "/static/img/riot.svg",
+		"iconAlt": "riotjs",
+		"name": "riot-the-enjoyable-ui-library",
+		"heading": "Riot - The enjoyable UI library",
+		"teaser": "9.88KB with simple syntax and components.",
+		"ingressHtml": "<p>In Riot HTML and JavaScript appear much more familiar. Both are under the same component, but neatly separated from each other. The HTML can be mixed with JavaScript expressions.</p>",
+		"bodyHtml": "<p>In Riot HTML and JavaScript appear much more familiar. Both are under the same component, but neatly separated from each other. The HTML can be mixed with JavaScript expressions.</p><p>No proprietary stuff, except the notation of enclosing expressions inside curly braces.</p><p>You see less boilerplate. Less brackets, commas, system properties and method names. Strings can be interpolated and methods can be defined with compact ES6 syntax. Just less everything.</p><p>We think Riot syntax is the cleanest way to separate layout and logic while enjoying the benefits of isolated reusable components.</p>",
+		"publishDate": "2016-04-25T17:00:00.0000000Z",
+		"tags": ["riot", "riotjs", "javascript", "ui"]
+	}, {
+		"id": "017f191e810c19729de860ea",
+		"iconSrc": "/static/img/rollup.svg",
+		"iconAlt": "rollup",
+		"name": "rollup-a-minimalistic-module-bundler",
+		"heading": "Rollup - A minimalistic module bundler",
+		"teaser": "No more overly complex configuration.",
+		"ingressHtml": "<p>Rollup is a module bundler for JavaScript which compiles small pieces of code into a something larger and more complex, such as a library or application. It uses the new standardized format for code modules included in the ES6 revision of JavaScript, instead of previous idiosyncratic solutions such as CommonJS and AMD.</p>",
+		"bodyHtml": "<p>Rollup is a module bundler for JavaScript which compiles small pieces of code into a something larger and more complex, such as a library or application. It uses the new standardized format for code modules included in the ES6 revision of JavaScript, instead of previous idiosyncratic solutions such as CommonJS and AMD.</p><p>Developing software is usually easier if you break your project into smaller separate pieces, since that often removes unexpected interactions and dramatically reduces the complexity of the problems you'll need to solve, and simply writing smaller projects in the first place isn't necessarily the answer. Unfortunately, JavaScript has not historically included this capability as a core feature in the language.</p>",
+		"publishDate": "2016-04-25T17:08:00.0000000Z",
+		"tags": ["rollup", "bundler", "node"]
+	}, {
 		"id": "507f191e810c19729de860ea", 
 		"iconSrc": "/static/img/node.svg",
 		"iconAlt": "node",

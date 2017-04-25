@@ -23,8 +23,7 @@ p {
 
 .vcenter {
   display: inline-block;
-  vertical-align: middle;
-  float: none; }
+  vertical-align: middle; }
 
 .hero-img {
   width: 160px;
@@ -51,7 +50,8 @@ p {
 
 .article-list .article-icon {
   width: 140px;
-  height: 140px; }
+  height: auto; 
+  margin-top: 26px; }
 
 .footer {
   background-color: #D8E1E9;
