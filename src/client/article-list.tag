@@ -25,6 +25,14 @@
 				this.update();
 		});
 
+		this.on('updated', () => {
+            var blocks = document.querySelectorAll('pre code');
+            blocks.forEach((block) => {
+                hljs.highlightBlock(block);
+            });
+        });
+
+
 	</script>
 
 </article-list>
