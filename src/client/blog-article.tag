@@ -17,7 +17,6 @@
 
         opts.article
             .then((article) => {
-                console.log("article", article);
 				this.article = article;
 				this.update();
         });

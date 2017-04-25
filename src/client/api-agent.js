@@ -1,7 +1,6 @@
 import 'whatwg-fetch'; 
 
 export const loadArticles = () => {
-    console.log("fetch loadArticles!", fetch);
     const url = '/api/articles';
     return fetch(url)
         .then((response) => response.json())
