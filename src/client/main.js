@@ -1,3 +1,6 @@
+import './css/vendor-style.css';
+import './css/app-style.css';
+
 import riot from 'riot';
 import route from 'riot-route';
 import hljs from 'highlight.js'

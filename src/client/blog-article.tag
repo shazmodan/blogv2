@@ -1,5 +1,5 @@
 <blog-article>
-    <article if={ article } class="full-article col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2" itemscope="" itemtype="http://schema.org/BlogPosting">
+    <article if={ article } class="full-article col-xs-12 col-sm-10 col-sm-offset-1 col-lg-6 col-lg-offset-3" itemscope="" itemtype="http://schema.org/BlogPosting">
         <div class="row">
             <a class="link" href="{ article.name }" itemprop="url">
                 <h1 itemprop="name headline">{ article.heading }</h1>
@@ -22,10 +22,12 @@
         });
 
         this.on('updated', () => {
-            var blocks = document.querySelectorAll('pre code');
-            blocks.forEach((block) => {
-                hljs.highlightBlock(block);
-            });
+            if (hljs) {
+                var blocks = document.querySelectorAll('pre code');
+                blocks.forEach((block) => {
+                    hljs.highlightBlock(block);
+                });
+            }
         });
 
     </script>
