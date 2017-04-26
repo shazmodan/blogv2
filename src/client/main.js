@@ -1,4 +1,4 @@
-import './css/vendor-style.css';
+import './css/hljs.css';
 import './css/app-style.css';
 
 import riot from 'riot';
@@ -10,6 +10,7 @@ import { loadArticles, loadArticle } from './api-agent.js';
 import './article-list.tag';
 import './blog-article.tag';
 import './raw.tag';
+import './loading.tag';
 
 riot.mixin('hljs', hljs);
 

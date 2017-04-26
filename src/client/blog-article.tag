@@ -1,4 +1,5 @@
 <blog-article>
+    <loading if={ !article }></loading>
     <article if={ article } class="full-article col-xs-12 col-sm-10 col-sm-offset-1 col-lg-6 col-lg-offset-3" itemscope="" itemtype="http://schema.org/BlogPosting">
         <div class="row">
             <a class="link" href="{ article.name }" itemprop="url">
