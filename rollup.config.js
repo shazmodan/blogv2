@@ -7,6 +7,8 @@ import globals from 'rollup-plugin-node-globals';
 import uglify from 'rollup-plugin-uglify';
 import { minify } from 'uglify-js-harmony';
 import postcss from 'rollup-plugin-postcss';
+import cssnext from 'postcss-cssnext';
+import cssnano from 'cssnano';
 
 export default {
   entry: 'src/client/main.js',
@@ -14,6 +16,10 @@ export default {
   format: 'iife',
   plugins: [
     postcss({
+      plugins: [
+        cssnext({ warnForDuplicates: false }),
+        cssnano()
+      ],
       extensions: ['.css']
     }),
     globals(),
