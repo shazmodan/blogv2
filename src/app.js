@@ -19,15 +19,15 @@ app.get('/', (req, res) => {
 });
 
 const articleUrl = '/api/article/';
-app.get(articleUrl + ':name', (req, res) => {
-  let url = articleUrl + req.params.name;
+app.get(articleUrl + ':slug', (req, res) => {
+  let url = articleUrl + req.params.slug;
   let cachedArticle = cache.get(url);
   if (cachedArticle !== null) {
     res.send(cachedArticle);
     return;
   }
 
-  const promise = articleProvider.loadSingleArticleFromFileAsync(req.params.name);
+  const promise = articleProvider.loadSingleArticleFromFileAsync(req.params.slug);
   //const promise = articleProvider.loadSingleArticleAsync(req.params.name);
   promise.then((result) => {
     if (result === null) {

@@ -49,7 +49,7 @@ module.exports = class ArticleProvider {
         return promise;
     };
 
-    loadSingleArticleFromFileAsync(name) {
+    loadSingleArticleFromFileAsync(slug) {
         const promise = new Promise((resolve, reject) => {
             fs.readFile(filePath, 'utf8', function (err, data) {
                 if (err) {
@@ -58,14 +58,14 @@ module.exports = class ArticleProvider {
                     resolve(data);
                 }
             });
-        }).then((result) => this.extractArticleFromText(result, name));
+        }).then((result) => this.extractArticleFromText(result, slug));
         return promise;
     };
 
-    extractArticleFromText(text, name) {
+    extractArticleFromText(text, slug) {
         const object = JSON.parse(text) || {};
         const articles = object.articles;
-        const article = articles.find(x => x.name === name) || {};
+        const article = articles.find(x => x.slug === slug) || {};
         return article;
     }  
 }

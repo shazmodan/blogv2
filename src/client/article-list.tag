@@ -3,7 +3,7 @@
 	<div each={ articles } class="row article-list">
 		<article class="article-post col-xs-12 col-sm-10 col-sm-offset-1 col-lg-6 col-lg-offset-3" itemscope="" itemtype="http://schema.org/BlogPosting">
 			<div class="row">
-				<a class="link" href="{ name }" itemprop="url">
+				<a class="link" href="{ slug }" itemprop="url">
 					<img itemprop="image" ng-if="article.iconSrc" src="{ iconSrc }" alt="{ iconAlt }" class="article-icon col-xs-1">
 					<div class="col-xs-9">
 						<h1 itemprop="name headline">{ heading }</h1>
