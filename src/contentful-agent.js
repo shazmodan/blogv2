@@ -1,4 +1,4 @@
-const contentful = require('contentful') //FIXME to ES6
+import { createClient } from 'contentful';
 
 const filePath = __dirname + '/contentful_ACCESS_TOKEN.json';
 
@@ -19,7 +19,7 @@ const getContentfulClient = () => {
 
     const configuration = loadContentfulConfiguration();
 
-    const client = contentful.createClient({
+    const client = createClient({
         space: configuration.spaceId,
         accessToken: contentDeliveryApiAccessToken,
     })
