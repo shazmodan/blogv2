@@ -1,3 +1,6 @@
+# App build
+main.min.js
+
 # webpack-dev-server
 *.hot-update.js.map
 *.hot-update.js

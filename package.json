@@ -34,8 +34,9 @@
     "uglify-js-harmony": "^2.7.5"
   },
   "scripts": {
-    "build": "rollup -c",
-    "watch": "chokidar \"./src/client/\" -c \"npm run build\"",
+    "build": "rollup -c ./rollup.config.js",
+    "build-dev": "rollup -c ./rollup.config.dev.js",
+    "watch": "chokidar \"./src/client/\" -c \"npm run build-dev\"",
     "server": "nodemon ./src/app.js localhost 3000 --watch ./src/ --verbose"
   },
   "keywords": [
