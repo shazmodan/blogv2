@@ -1,6 +1,9 @@
 # App build
 main.min.js
 
+# Contentful access token
+*contentful_ACCESS_TOKEN.*
+
 # webpack-dev-server
 *.hot-update.js.map
 *.hot-update.js
