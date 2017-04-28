@@ -1,6 +1,6 @@
 import { createClient } from 'contentful';
 
-const filePath = __dirname + '/contentful_ACCESS_TOKEN.json';
+const filePath = __dirname + '/contentful-configuration.json';
 
 const loadContentfulConfiguration = () => {
     const promise = new Promise((resolve, reject) => {

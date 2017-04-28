@@ -3,7 +3,7 @@ import './css/app-style.css';
 
 import riot from 'riot';
 import route from 'riot-route';
-import hljs from 'highlight.js'
+import hljs from 'highlight.js' 
 
 import { loadArticles, loadArticle } from './api-agent.js';
 

@@ -3,6 +3,7 @@ main.min.js
 
 # Contentful access token
 *contentful_ACCESS_TOKEN.*
+*contentful-configuration.*
 
 # webpack-dev-server
 *.hot-update.js.map

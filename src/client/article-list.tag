@@ -1,7 +1,7 @@
 <article-list>
 	<loading if={ !articles }></loading>
 	<div each={ articles } class="row article-list">
-		<article class="article-post col-xs-12 col-sm-10 col-sm-offset-1 col-lg-6 col-lg-offset-3" itemscope="" itemtype="http://schema.org/BlogPosting">
+		<article class="article-post col-xs-12 col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2" itemscope="" itemtype="http://schema.org/BlogPosting">
 			<div class="row">
 				<a class="link" href="{ slug }" itemprop="url">
 					<img itemprop="image" ng-if="article.iconSrc" src="{ iconSrc }" alt="{ iconAlt }" class="article-icon col-xs-1">
